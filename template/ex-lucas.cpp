@@ -1,4 +1,4 @@
-//shjj-C(n,m)%P(P=p^c) pÎªÖÊÊı
+//shjj-C(n,m)%P(P=p^c) pÃÂªÃ–ÃŠÃŠÃ½
 
 #include <iostream>
 #include <cstring>
