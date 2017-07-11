@@ -3,7 +3,7 @@
 #include <cstdio>
 #include <cstdlib>
 
-//Çóa*x+b*y=c
+//æ±‚a*x+b*y=c
 
 using namespace std;
 
@@ -21,24 +21,24 @@ bool work(int A,int B,int C)
 {
 int ss=Gcd(A,B);if (C%ss) return false;
 x*=C/ss;y*=C/ss;
-//Çó·Ç¸ºÊı½â
+//æ±‚éè´Ÿæ•°è§£
 if (x<=0)
   {
   int t=abs(x)/(B/ss);
   x+=t*B/ss,y-=t*A/ss;
-  if (x<=0) x+=B/ss,y-=A/ss;//ÕıÕûÊı
-  //if (x<0) x+=B/ss,y-=A/ss;//·Ç¸ºÊı
-  if (x<=0||y<=0) return false;//ÕıÕûÊı
-  //if (x<0||y<0) return false;//·Ç¸ºÊı
+  if (x<=0) x+=B/ss,y-=A/ss;//æ­£æ•´æ•°
+  //if (x<0) x+=B/ss,y-=A/ss;//éè´Ÿæ•°
+  if (x<=0||y<=0) return false;//æ­£æ•´æ•°
+  //if (x<0||y<0) return false;//éè´Ÿæ•°
   }
 if (y<=0)
   {
   int t=abs(y)/(A/ss);
   x-=t*B/ss,y+=t*A/ss;
-  if (y<=0) x-=B/ss,y+=A/ss;//ÕıÕûÊı
-  //if (y<0) x-=B/ss,y+=A/ss;//·Ç¸ºÊı
-  if (x<=0||y<=0) return false;//ÕıÕûÊı
-  //if (x<0||y<0) return false;//·Ç¸ºÊı
+  if (y<=0) x-=B/ss,y+=A/ss;//æ­£æ•´æ•°
+  //if (y<0) x-=B/ss,y+=A/ss;//éè´Ÿæ•°
+  if (x<=0||y<=0) return false;//æ­£æ•´æ•°
+  //if (x<0||y<0) return false;//éè´Ÿæ•°
   }
 return true;
 }
@@ -46,6 +46,6 @@ return true;
 int main()
 {
 scanf("%d%d%d",&A,&B,&C);
-if (!work(A,B,C)) {printf("ºÇºÇ");return 0;}
+if (!work(A,B,C)) {printf("å‘µå‘µ");return 0;}
 printf("%d %d",x,y);
 }
